@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>  
+    <meta charset="utf-8">
+    <title>Profile</title>
+    <meta name="description" content="自己紹介サイトです。ぜひご覧になってください！">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/top.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header id="header" class="wrapper">
+        <h1 class="logo">
+            <a href="index.html">
+                <div>PORTFOLIO</div>
+            </a>
+        </h1>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="navi">
+            <ul class="menu">
+                <li><a href="index.html" class="is-active">TOP</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="mainvisual">
+            <img src="img/mainvisual.jpg" alt="">
+            <div class="caption">
+                <span class="eyebrow">PROFILE / 2026</span>
+                <p class="name">Mitsuki Yamashita</p>
+            </div>
+        </div>
+
+        <!-- 2列用の大枠を廃止し、コンテンツを中央配置するラッパーに変更 -->
+        <div class="top-contents-wrapper">
+            <div class="top-contents">
+                <section class="profile wrapper" id="about">
+                    <div class="img">
+                        <img src="img/profile.jpg" alt="">
+                    </div>
+                    <div class="detail">
+                        <span class="eyebrow">PROFILE</span>
+                        <h2 class="section-title">About Me</h2>
+                        <p class="name">山下 晃生 (Yamashita Mitsuki)</p>
+                        <p class="bio">
+                            出身：宮崎県宮崎市<br>
+                            生年月日：2005/10/31<br>
+                            血液型：O型<br>
+                            MBTI：ISTP（巨匠型）
+                        </p>
+                    </div>
+                </section>
+
+                <section class="about wrapper">
+                    <a class="section-link-card" href="about.html">
+                        <div class="text">
+                            <h2 class="section-title-l">
+                                <span class="en">ABOUT</span>
+                                <span class="ja">私について</span>
+                            </h2>
+                            <span class="btn">Check!</span>
+                        </div>
+                    </a>
+                </section>
+
+                <section class="blog wrapper">
+                    <a class="section-link-card" href="skills.html">
+                        <div class="text">
+                            <h2 class="section-title-l">
+                                <span class="en">SKILLS</span>
+                                <span class="ja">スキル</span>
+                            </h2>
+                            <span class="btn">Check!</span>
+                        </div>
+                    </a>
+                </section>
+
+                <section class="blog wrapper">
+                    <a class="section-link-card" href="blog.html">
+                        <div class="text">
+                            <h2 class="section-title-l">
+                                <span class="en">BLOG</span>
+                                <span class="ja">ブログ</span>
+                            </h2>
+                            <span class="btn">Check!</span>
+                        </div>
+                    </a>
+                </section>
+
+                <section class="contact wrapper">
+                    <a class="section-link-card" href="contact.html">
+                        <div class="text">
+                            <h2 class="section-title-l">
+                                <span class="en">CONTACT</span>
+                                <span class="ja">お問い合わせ</span>
+                            </h2>
+                            <span class="btn">Check!</span>
+                        </div>
+                    </a>
+                </section>
+            </div> <!-- /.top-contents -->
+        </div> <!-- /.top-contents-wrapper -->
+    </main>
+
+    <!-- フッター（ページ上部へ戻るボタンを内部へ統合） -->
+    <footer id="footer">
+        <div class="page-top">
+            <a class="btn" href="index.html">ページ上部へ戻る</a>
+        </div>
+        <div class="wrapper">
+            <p class="copyright">&copy; 2026 PORTFOLIO</p>
+        </div>
+    </footer>
+</body>
+</html>

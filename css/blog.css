@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* 一覧：PCは2列、スマホは1列 */
+.blog-list{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 80px;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+.blog-list .post-list{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    width: 100%;
+    margin: 0 auto;
+}
+.blog-list .post-list li{ display: flex; }
+.blog-list .post-list li a{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: var(--color-surface);
+    border-radius: var(--radius-l);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: transform .3s, box-shadow .3s;
+}
+.blog-list .post-list li a:hover{
+    opacity: 1;
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+.blog-list .post-list li .img{ margin: 0; overflow: hidden; background: var(--color-gray); }
+.blog-list .post-list li .img img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    filter: sepia(8%) saturate(94%);
+    transition: transform .5s;
+}
+.blog-list .post-list li a:hover .img img{ transform: scale(1.05); }
+.blog-list .post-list li time{
+    align-self: flex-start;
+    margin: 20px 28px 0;
+    padding: 2px 14px;
+    font-family: var(--font-head);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    color: var(--color-accent-deep);
+    background: var(--color-accent-soft);
+    border-radius: 999px;
+}
+.blog-list .post-list li .title{
+    margin: 10px 28px 0;
+    font-family: var(--font-head);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+.blog-list .post-list li a::after{
+    content: "続きを読む";
+    margin: 14px 28px 26px;
+    font-size: 12px;
+    color: var(--color-muted);
+}
+
+@media screen and (max-width: 767px){
+    .blog-list{ padding: 0 16px; margin-bottom: 56px; }
+    .blog-list .post-list{ grid-template-columns: minmax(0, 1fr); gap: 20px; }
+    .blog-list .post-list li time{ margin: 16px 22px 0; }
+    .blog-list .post-list li .title{ margin: 8px 22px 0; font-size: 17px; }
+    .blog-list .post-list li a::after{ margin: 10px 22px 22px; }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>  
+    <meta charset="utf-8">
+    <title>Blog | PORTFOLIO</title>
+    <meta name="description" content="自己紹介サイトです。ぜひご覧になってください！">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header id="header" class="wrapper">
+        <h1 class="logo">
+            <a href="index.html">
+                <div>PORTFOLIO</div>
+            </a>
+        </h1>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="navi">
+            <ul class="menu">
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="blog.html" class="is-active">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header wrapper">
+            <h1 class="page-title">
+            <span class="ja">ブログ</span>
+            <span class="en">BLOG</span>
+            </h1>
+        </div>
+        
+        <div class="blog-list wrapper-1300">
+            <ul class="post-list">
+                <li>
+                    <a href="blog-detail2.html">
+                        <div class="img">
+                            <img src="img/blog/blog2.jpg" alt="">
+                        </div>
+                        <time datetime="2026-09-14">2026.09.14</time>
+                        <p class="title">国家試験対策開始</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="blog-detail1.html">
+                        <div class="img">
+                            <img src="img/blog/blog1.jpg" alt="">
+                        </div>
+                        <time datetime="2026-08-05">2026.08.05</time>
+                        <p class="title">CTF参加</p>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </main>
+
+    <!-- フッター（ページ上部へ戻るボタンを内部へ統合） -->
+    <footer id="footer">
+        <div class="wrapper">
+            <p class="copyright">&copy; 2026 PORTFOLIO</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+#skills{ padding-top: 8px; padding-bottom: 40px; }
+.skills-area .text{ display: grid; gap: 24px; padding: 0; margin: 0; }
+.skills-area .text li{
+    background-color: var(--color-surface);
+    padding: 36px 40px 40px;
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-soft);
+}
+.skills-area .text li h2{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+.skills-area .text li h2::before{
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    flex-shrink: 0;
+}
+.skills-area .text li p{
+    font-size: 15px;
+    color: var(--color-sub);
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+.skills-area .text li p:last-of-type{ margin-bottom: 0; }
+.skills-area .text li span{
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 13px;
+    color: var(--color-accent-deep);
+    background: var(--color-accent-soft);
+    padding: 6px 16px;
+    border-radius: 999px;
+    line-height: 1.6;
+}
+
+#works{ padding-bottom: 80px; }
+#works .works-area .text{ padding: 0 8px 20px; color: var(--color-sub); }
+#works .youtube{
+    background: var(--color-surface);
+    padding: 16px;
+    border-radius: var(--radius-l);
+    box-shadow: var(--shadow-soft);
+}
+#works .youtube iframe{
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: var(--radius-m);
+}
+
+@media screen and (max-width: 767px){
+    #skills{ padding-top: 0; padding-bottom: 32px; }
+    .skills-area .text{ gap: 16px; }
+    .skills-area .text li{ padding: 28px 24px 30px; }
+    .skills-area .text li h2{ font-size: 19px; }
+    .skills-area .text li p{ font-size: 14px; }
+    #works{ padding-bottom: 56px; }
+    #works .youtube{ padding: 10px; border-radius: var(--radius-m); }
+    #works .youtube iframe{ border-radius: var(--radius-s); }
+}

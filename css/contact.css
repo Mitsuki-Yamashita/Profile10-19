@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.form-container{
+    max-width: 680px;
+    margin: 0 auto 80px;
+    padding: 20px 24px;
+    background: var(--color-surface);
+    border-radius: var(--radius-l);
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+}
+.form-container iframe{
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 767px){
+    .form-container{
+        width: calc(100% - 32px);
+        margin-bottom: 56px;
+        padding: 12px 8px;
+        border-radius: var(--radius-m);
+    }
+}
